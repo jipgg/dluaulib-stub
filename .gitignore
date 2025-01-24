@@ -1,3 +1,3 @@
--bin/
--cmake/
--clangd/
+bin/
+cmake/
+clangd/

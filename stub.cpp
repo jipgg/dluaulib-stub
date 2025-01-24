@@ -199,8 +199,6 @@ void luau_codegen_compile(lua_State* L, int idx) {}
 //lumin.h
 int dluau_newuserdatatag() {return 0;}
 int dluau_newlightuserdatatag() {return 0;}
-bool dluau_samemeta(lua_State* L, int idx, const char* tname) {return 0;}
-int16_t dluau_defaultuseratom(const char* key, size_t len) {return 0i16;}
 void dluau_loadfuncs(lua_State* L) {}
 int dluau_registertypetagged(const char *tname) {return 0;}
 void dluau_registertype(const char *tname) {}
@@ -209,9 +207,5 @@ bool dluau_istyperegistered(const char *tname) {return 0;}
 int dluau_stringatom(lua_State *L, const char *key) {return 0;}
 int dluau_lstringatom(lua_State *L, const char *key, size_t len) {return 0;}
 lua_State* dluau_newstate() {return 0;}
-void dluau_init(lua_State* L) {}
-lua_CompileOptions* lumin_compileopts{nullptr};
-int dluau_run(const luauxt_RunOptions* opts) {return 0;}
+int dluau_run(const dluau_RunOptions* opts) {return 0;}
 
-lua_State* luminU_loadscript(lua_State* L, const char* script_path, size_t len) {return 0;}
-const char* luminU_spawnscript(lua_State* L, const char* script_path, size_t len) {return 0;}
