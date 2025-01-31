@@ -199,13 +199,22 @@ void luau_codegen_compile(lua_State* L, int idx) {}
 //lumin.h
 int dluau_newuserdatatag() {return 0;}
 int dluau_newlightuserdatatag() {return 0;}
-void dluau_loadfuncs(lua_State* L) {}
+int dluau_gettagfromtype(const char *tname) {return 0;}
 int dluau_registertypetagged(const char *tname) {return 0;}
-void dluau_registertype(const char *tname) {}
-int dluau_gettagfromtname(const char *tname) {return 0;}
 bool dluau_istyperegistered(const char *tname) {return 0;}
+void dluau_registertype(const char *tname) {}
+const char* dluau_findstringatom(int atom) {return 0;}
 int dluau_stringatom(lua_State *L, const char *key) {return 0;}
 int dluau_lstringatom(lua_State *L, const char *key, size_t len) {return 0;}
+int dluau_require(lua_State *L, const char *name) {return 0;}
+char* dluau_precompile(const char* src, size_t src_size, size_t* outsize) {return 0;}
 lua_State* dluau_newstate() {return 0;}
-int dluau_run(const dluau_RunOptions* opts) {return 0;}
+int dluau_run(const dluau_runoptions* opts) {return 0;}
+void dluau_registerglobals(lua_State *L) {}
+void dluau_openlibs(lua_State *L) {}
+void dluauopen_dlimport(lua_State *L) {}
+void dluauopen_print(lua_State *L) {}
+void dluauopen_scan(lua_State* L) {}
+void dluauopen_task(lua_State* L) {}
+void dluauopen_os(lua_State* L) {}
 
