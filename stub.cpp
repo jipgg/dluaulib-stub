@@ -217,5 +217,5 @@ void dluauopen_print(lua_State *L) {}
 void dluauopen_scan(lua_State* L) {}
 void dluauopen_task(lua_State* L) {}
 void dluauopen_os(lua_State* L) {}
-
 void dluau_addctask(dluau_ctask step_callback) {}
+
