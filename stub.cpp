@@ -218,4 +218,4 @@ void dluauopen_scan(lua_State* L) {}
 void dluauopen_task(lua_State* L) {}
 void dluauopen_os(lua_State* L) {}
 
-void dlluau_addctask(dluau_ctask step_callback) {}
+void dluau_addctask(dluau_ctask step_callback) {}
